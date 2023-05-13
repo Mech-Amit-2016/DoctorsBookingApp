@@ -55,9 +55,25 @@ public final class BookSlot_jsp extends org.apache.jasper.runtime.HttpJspBase
         ispostback = true;
     }
     if (ispostback) {
-int sno=Integer.parseInt(request.getParameter("submit"));
+      int sno=Integer.parseInt(request.getParameter("submit")); 
+         PreparedStatement ps = Dbconnector.connection().prepareStatement("select* from bookingslot where sno=?");
+         ps.setString(1,""+sno);
+          ResultSet rs = ps.executeQuery();
+          rs.next();
+//          System.out.println(rs.getObject("status"));
+          if(rs.getObject("status")=="Booked"){
+              ps=Dbconnector.connection().prepareStatement("update bookingslot set status=?,patient=?,book_cancel=? where sno=?");
+          ps.setString(1,"available");
+          ps.setString(2,"--");
+          ps.setString(3,"Booknow");
+          ps.setString(4,""+sno);
+          ps.executeUpdate();
+          response.sendRedirect("Patient.jsp");
+          }
+        else{
 System.out.println(sno);
 response.sendRedirect("patient.jsp?sno="+sno);
+        }
     }   
 
       out.write("\n");

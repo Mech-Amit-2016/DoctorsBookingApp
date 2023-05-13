@@ -3,11 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/DELL/Documents/NetBeansProjects/DoctorsBookingApp/web/printreceipt.jsp</file>
-            <file>file:/C:/Users/DELL/Documents/NetBeansProjects/DoctorsBookingApp/src/java/dppackage/Dbconnector.java</file>
-            <file>file:/C:/Users/DELL/Documents/NetBeansProjects/DoctorsBookingApp/web/BookSlot.jsp</file>
-            <file>file:/C:/Users/DELL/Documents/NetBeansProjects/DoctorsBookingApp/src/java/sourcefile/CreateSlot.java</file>
-            <file>file:/C:/Users/DELL/Documents/NetBeansProjects/DoctorsBookingApp/web/patient.jsp</file>
+            <file>file:/C:/DoctorsBookingApp/src/java/sourcefile/CreateSlot.java</file>
         </group>
     </open-files>
 </project-private>
